@@ -48,6 +48,7 @@ This gem uses the [master branch](https://github.com/Stanko/skyblue) as a source
   - Copy assets into proper directories
   - Modify & create some files for Rails-friendliness
 - Test: `rake test`
+- Publish: increment version and `rake publish_gem`
 
 ## Contributing
 
