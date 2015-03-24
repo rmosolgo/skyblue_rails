@@ -7,25 +7,34 @@ This gem uses the [master branch](https://github.com/Stanko/skyblue) as a source
 ## Usage
 
 - Install:
+
   ```ruby
   gem 'skyblue-rails'
   ```
+
   ```
   bundle install
   ```
+
   then restart your development server.
+
 - Include in Sass:
+
   ```scss
   // application.scss
   @import 'skyblue';
   ```
+
   or plain CSS:
+
   ```css
   /*
    *= require 'skyblue'
   */
   ```
+
 - There's an IE fix that you can include (but I'm not sure what it's for):
+
   ```javascript
   //= require skyblue/ie
   ```
