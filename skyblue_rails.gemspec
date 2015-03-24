@@ -7,7 +7,7 @@ Gem::Specification.new do |spec|
   spec.authors       = ["Robert Mosolgo"]
   spec.email         = ["rdmosolgo@gmail.com"]
   spec.summary       = %q{Use the SkyBlue style framework with Rails}
-  spec.description   = %q{SkyBlue is a Bootstrap-like style framework written in Sass. `skyblue-rails` adds Skyblue to the Rails asset pipeline.}
+  spec.description   = %q{SkyBlue is a Bootstrap-like style framework written in Sass. `skyblue_rails` adds SkyBlue to the Rails asset pipeline.}
   spec.homepage      = "http://github.com/rmosolgo/skyblue_rails"
   spec.license       = "MIT"
 
