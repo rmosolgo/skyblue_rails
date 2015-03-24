@@ -1,4 +1,4 @@
-# skyblue-rails
+# skyblue-rails [![Build Status](https://travis-ci.org/rmosolgo/skyblue-rails.svg?branch=master)](https://travis-ci.org/rmosolgo/skyblue-rails)
 
 Use [Skyblue](http://stanko.github.io/skyblue/) Sass framework with Rails.
 
