@@ -1,3 +1,6 @@
 Gemfile.lock
 skyblue_source/
 spec/**/*.log
+.sass-cache/
+spec/dummy/tmp
+spec/dummy/log
