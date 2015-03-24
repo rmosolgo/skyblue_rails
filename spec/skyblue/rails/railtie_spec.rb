@@ -24,6 +24,7 @@ describe Skyblue::Rails::Railtie do
 
       # css
       assert_match(/margin-top-5/, compiled_css, "it includes Skyblue")
+      assert_match(/\.color-error \{\n  color: #0000bb; \}/, compiled_css, "it has overrides")
       assert_match(%r{/assets/pe-icon/Pe-icon-7-stroke}, compiled_css, "it has slugged font paths")
 
       # js

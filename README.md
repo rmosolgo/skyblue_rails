@@ -1,8 +1,8 @@
 # skyblue_rails [![Build Status](https://travis-ci.org/rmosolgo/skyblue-rails.svg?branch=master)](https://travis-ci.org/rmosolgo/skyblue-rails)
 
-Use [SkyBlue](http://stanko.github.io/skyblue/) Sass framework with Rails.
+Use [SkyBlue](http://stanko.github.io/skyblue/) Sass framework with Rails. You can [choose your own settings](#overrides), too!
 
-This gem uses the [master branch](https://github.com/Stanko/skyblue) as a source.
+This gem uses the [`Stanko/skyblue` master branch](https://github.com/Stanko/skyblue) as a source.
 
 ## Usage
 
@@ -38,6 +38,22 @@ This gem uses the [master branch](https://github.com/Stanko/skyblue) as a source
   ```javascript
   //= require skyblue/ie
   ```
+
+## Overrides
+
+If you use Sass, you can override SkyBlue's defaults. To do this, define any variable before importing SkyBlue:
+
+```scss
+// application.scss
+
+$text-color: #FF22D2;
+$font-family: "Comic Sans", sans-serif;
+// D:
+
+@import 'skyblue';
+```
+
+You can see the available variables in [_variables.scss](https://github.com/rmosolgo/skyblue_rails/blob/master/assets/stylesheets/skyblue/_variables.scss).
 
 
 ## Development

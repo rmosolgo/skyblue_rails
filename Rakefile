@@ -34,9 +34,7 @@ task :clear_assets do
 end
 
 desc "Rebuild assets from '#{SKYBLUE_PATH}' into gem source"
-
-task build_assets: [:clone_source, :clear_assets, :copy_assets, :add_ie_js, :modify_font_urls] do
-end
+task build_assets: [:clone_source, :clear_assets, :copy_assets, :add_ie_js, :modify_font_urls, :add_defaults]
 
 desc "Add ie.js for `skyblue/ie` include"
 task :add_ie_js do
@@ -55,6 +53,16 @@ task :modify_font_urls do
   # replace relative path with `font-path` helper
   icons_css.gsub!(%r{'\.\.\/fonts/(.*)\?[^']+'}, 'font-path(\'\1\')')
   File.open(icons_path, 'wb+') {|f| f.puts(icons_css)}
+end
+
+desc "Add !default to variables"
+task :add_defaults do
+  puts_header("Adding !default to _variables")
+  path = "./assets/stylesheets/skyblue/_variables.scss"
+  css = File.read(path)
+  # replace relative path with `font-path` helper
+  css.gsub!(/;/, ' !default;')
+  File.open(path, 'wb+') {|f| f.puts(css)}
 end
 
 desc "Copy asset files from #{SKYBLUE_PATH}"
