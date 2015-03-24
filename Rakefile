@@ -1,6 +1,6 @@
 require "bundler/gem_tasks"
 
-SKYBLUE_PATH = "./skyblue"
+SKYBLUE_PATH = "./skyblue_source"
 
 require 'rake/testtask'
 
@@ -80,7 +80,7 @@ end
 
 desc "Clone the source"
 task :clone_source do
-  puts_header("Cloning source into ./skyblue")
+  puts_header("Cloning source into #{SKYBLUE_PATH}")
   FileUtils.rm_rf(SKYBLUE_PATH)
   `git clone https://github.com/Stanko/skyblue.git #{SKYBLUE_PATH}`
 end
