@@ -84,3 +84,11 @@ task :clone_source do
   FileUtils.rm_rf(SKYBLUE_PATH)
   `git clone https://github.com/Stanko/skyblue.git #{SKYBLUE_PATH}`
 end
+
+
+desc "Publish the the gem"
+task :publish_gem do
+  require './lib/skyblue/rails/version'
+  `gem build skyblue_rails.gemspec`
+  `gem push skyblue_rails-#{Skyblue::Rails::VERSION}.gem`
+end

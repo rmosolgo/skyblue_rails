@@ -1,5 +1,5 @@
 require "skyblue/rails/version"
-require "skyblue/rails/engine"
+require "skyblue/rails/railtie"
 require "sass"
 
 module Skyblue

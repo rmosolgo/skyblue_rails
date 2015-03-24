@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe Skyblue::Rails::Engine do
+describe Skyblue::Rails::Railtie do
   let(:gemfile) { File.expand_path('../Gemfile', File.dirname(__FILE__)) }
   let(:asset_cache_directory) { "spec/dummy/tmp/cache/" }
   let(:compiled_asset_directory) { "spec/dummy/public/assets/" }
@@ -31,9 +31,6 @@ describe Skyblue::Rails::Engine do
 
       # fonts
       assert_equal(4, compiled_font_files.length)
-
-      # images
-      assert_equal(2, compiled_image_files.length)
 
     ensure
 

@@ -1,5 +1,5 @@
 module Skyblue
   module Rails
-    VERSION = "0.1.3"
+    VERSION = "0.1.6"
   end
 end
