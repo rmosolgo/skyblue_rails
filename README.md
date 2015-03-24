@@ -1,6 +1,6 @@
-# skyblue-rails [![Build Status](https://travis-ci.org/rmosolgo/skyblue-rails.svg?branch=master)](https://travis-ci.org/rmosolgo/skyblue-rails)
+# skyblue_rails [![Build Status](https://travis-ci.org/rmosolgo/skyblue-rails.svg?branch=master)](https://travis-ci.org/rmosolgo/skyblue-rails)
 
-Use [Skyblue](http://stanko.github.io/skyblue/) Sass framework with Rails.
+Use [SkyBlue](http://stanko.github.io/skyblue/) Sass framework with Rails.
 
 This gem uses the [master branch](https://github.com/Stanko/skyblue) as a source.
 
@@ -9,7 +9,7 @@ This gem uses the [master branch](https://github.com/Stanko/skyblue) as a source
 - Install:
 
   ```ruby
-  gem 'skyblue-rails'
+  gem 'skyblue_rails'
   ```
 
   ```
