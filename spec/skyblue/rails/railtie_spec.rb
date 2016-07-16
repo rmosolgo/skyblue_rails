@@ -31,7 +31,8 @@ describe Skyblue::Rails::Railtie do
       assert_match(/matchMedia/, compiled_js, "it may include skyblue/ie")
 
       # fonts
-      assert_equal(4, compiled_font_files.length)
+      # 4 formats, 3 are gzipped (not .woff)
+      assert_equal(7, compiled_font_files.length)
 
     ensure
 
